@@ -1,20 +1,4 @@
-interface PhoneNumberDictionary {
-  [phone: string]: {
-    num: number;
-  };
-}
-
-interface Contact {
-  name: string;
-  address: string;
-  phones: PhoneNumberDictionary;
-}
-
-enum PhoneType {
-  Home = 'Home',
-  Office = 'Office',
-  Studio = 'Studio',
-}
+import { Contact, PhoneType } from './types';
 
 // api
 // TODO: 아래 함수의 반환 타입을 지정해보세요.
@@ -106,4 +90,7 @@ class AddressBook {
   /* ------------------------------------------------ */
 }
 
-new AddressBook();
+// new AddressBook();
+
+let div = document.querySelector('div') as HTMLDivElement;
+div.innerText;
